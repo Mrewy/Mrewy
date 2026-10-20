@@ -5,4 +5,4 @@
 
 # Discord
 
-## [![Discord Presence](https://lanyard.cnrad.dev/api/1499068081022963732?theme=dark&hideActivity=true)](https://discord.com/users/1499068081022963732)
+## [![Discord Presence](https://lanyard.cnrad.dev/api/1499068081022963732?animated=false&showDisplayName=true&hideActivity=true)](https://discord.com/users/1499068081022963732)
