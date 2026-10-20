@@ -1,98 +1,99 @@
 {
-  "telemetry.feedback.enabled": false,
-  "files.autoSave": "onFocusChange",
+  // Terminal
+  "terminal.integrated.shellIntegration.enabled": true,
 
+  "terminal.integrated.suggest.insertTrailingSpace": false,
+  "terminal.integrated.suggest.showStatusBar": true,
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.suggest.quickSuggestions": {
+    "commands": "on",
+    "arguments": "on",
+    "unknown": "off"
+  },
+
+  "terminal.integrated.tabs.showActions": "singleTerminalOrNarrow",
+  "terminal.integrated.tabs.title": "mrewy${separator}${process}",
+  "terminal.integrated.tabs.showActiveTerminal": "always",
+
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.enablePersistentSessions": false,
+
+  "terminal.integrated.gpuAcceleration": "auto",
+  "terminal.integrated.enableImages": false,
+
+  "terminal.integrated.smoothScrolling": true,
+
+  "terminal.integrated.initialHint": false,
+
+  // Editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+
+  "editor.experimentalGpuAcceleration": "on",
+
+  "editor.smoothScrolling": true,
+
+  // Files
+  "files.readonlyInclude": { "node_modules/**/*": true },
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+  "files.insertFinalNewline": true,
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+
+  "files.associations": {
+    "commit-msg": "shellscript",
+    "pre-commit": "shellscript",
+    "check-package-version": "shellscript"
+  },
+
+  "[markdown]": { "files.trimTrailingWhitespace": false },
+
+  // Source Control
+  "scm.repositories.selectionMode": "single",
+  "scm.repositories.explorer": true,
+
+  "scm.showInputActionButton": false,
+
+  "scm.graph.badges": "all",
+
+  // Workbench
+  "workbench.list.smoothScrolling": true,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "none",
+
+  // Git
+  "git.enableCommitSigning": true,
   "git.alwaysSignOff": false,
   "git.autofetch": true,
-  "git.enableCommitSigning": true,
 
+  // Prettier
+  "prettier.requireConfig": true,
+  "prettier.configPath": ".prettierrc.json",
+  "prettier.ignorePath": ".prettierignore",
+
+  // npm
   "npm.packageManager": "npm",
   "npm.scriptRunner": "npm",
 
-  "js/ts.implicitProjectConfig.module": "NodeNext",
-  "js/ts.implicitProjectConfig.target": "ESNext",
+  // GitLens
+  "gitlens.telemetry.enabled": false,
 
-  "prettier.requireConfig": true,
-  "prettier.configPath": ".prettierrc.json",
-
-  "workbench.iconTheme": "vscode-icons",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-
-  "cSpell.validateDirectives": false,
-  "cSpell.ignoreRandomStrings": true,
-  "cSpell.ignoreWords": [],
-  "cSpell.words": [
-    // Project
-    "NodeNext",
-    "ESNext",
-
-    // Names
-    "Tresster"
+  // vscode-icons
+  "vsicons.customIconFolderPath": "assets",
+  "vsicons.associations.files": [
+    { "icon": "catSmile", "extensions": ["README.md"], "filename": true, "format": "png" }
   ],
 
-  "markdownlint.config": {
-    "$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint/v0.39.0/schema/markdownlint-config-schema-strict.json",
+  // Telemetry
+  "telemetry.editStats.enabled": false,
+  "telemetry.feedback.enabled": false,
 
-    "MD001": true,
-    "MD003": true,
-    "MD004": true,
-    "MD005": true,
-    "MD007": true,
-    "MD009": true,
-
-    "MD010": true,
-    "MD011": true,
-    "MD012": true,
-    "MD013": false,
-    "MD014": true,
-    "MD018": true,
-    "MD019": true,
-
-    "MD020": true,
-    "MD021": true,
-    "MD022": true,
-    "MD023": true,
-    "MD024": true,
-    "MD025": true,
-    "MD026": true,
-    "MD027": true,
-    "MD028": true,
-    "MD029": true,
-
-    "MD030": true,
-    "MD031": true,
-    "MD032": true,
-    "MD033": true,
-    "MD034": true,
-    "MD035": true,
-    "MD036": true,
-    "MD037": true,
-    "MD038": true,
-    "MD039": true,
-
-    "MD040": true,
-    "MD041": true,
-    "MD042": true,
-    "MD043": true,
-    "MD044": true,
-    "MD045": true,
-    "MD046": true,
-    "MD047": true,
-    "MD048": true,
-    "MD049": true,
-
-    "MD050": true,
-    "MD051": true,
-    "MD052": true,
-    "MD053": true,
-    "MD054": true,
-    "MD055": true,
-    "MD056": true,
-    "MD058": true,
-    "MD059": true,
-
-    "MD060": true
-  }
+  // Other
+  "diffEditor.ignoreTrimWhitespace": false
 }

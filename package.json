@@ -1,40 +1,62 @@
 {
-  "name": "tresster",
-  "version": "1.0.0",
+  "name": "mrewy",
+  "version": "2.0.0",
   "private": true,
-  "description": ".",
+  "description": "Mrewy README.",
   "keywords": [
-    "."
+    "mrewy",
+    "readme"
   ],
-  "homepage": "https://github.com/Tresster/Tresster#README.md",
   "bugs": {
-    "url": "https://github.com/Tresster/Tresster/issues"
+    "url": "https://github.com/Mrewy/Mrewy/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tresster/Tresster.git"
+    "url": "git+https://github.com/Mrewy/Mrewy.git"
   },
   "funding": {
     "type": "github",
-    "url": "https://github.com/sponsors/Tresster"
+    "url": "https://github.com/sponsors/Mrewy"
   },
   "license": "MIT",
-  "author": "Tresster",
+  "author": "Mrewy",
+  "contributors": [],
   "type": "module",
   "main": "README.md",
   "scripts": {
+    "cspell": "cspell . --verbose",
+    "markdownlint": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
     "prepare": "husky",
     "prettier": "prettier . --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "allowScripts": {
+    "fsevents": true
+  },
+  "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
+    "@commitlint/format": "^21.2.3",
+    "@commitlint/types": "^21.2.3",
+    "cspell": "^10.4.0",
     "husky": "^9.1.7",
-    "markdownlint": "0.39.0",
-    "prettier": "^3.6.2",
-    "prettier-plugin-sh": "0.18.0"
+    "lint-staged": "^17.6.0",
+    "markdownlint-cli2": "^0.23.3",
+    "prettier": "^3.9.10",
+    "prettier-plugin-sh": "0.20.2"
   },
   "engines": {
-    "node": "v25.1.0",
-    "npm": ">=11.6.2"
-  }
+    "node": ">=26.12.0",
+    "npm": ">=11.20.0"
+  },
+  "os": [
+    "linux",
+    "darwin",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ]
 }
